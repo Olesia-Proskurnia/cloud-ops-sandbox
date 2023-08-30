@@ -32,7 +32,7 @@ variable "asm_channel" {
   default     = "stable"
   validation {
     condition     = can(regex("^(rapid|regular|stable)$", var.asm_channel))
-    error_message = "ASM channel/revision can be only 'rapid', 'regular' or stable'"
+    error_message = "ASM channel or revision can be only rapid, regular or stable"
   }
 }
 
