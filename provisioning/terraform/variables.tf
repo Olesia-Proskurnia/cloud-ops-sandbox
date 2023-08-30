@@ -91,5 +91,5 @@ variable "state_prefix" {
 variable "vpc-name" {
   type        = string
   description = "Custom VPC Name"
-  default     = "cicd-vpc"
+  default     = "default"
 }
