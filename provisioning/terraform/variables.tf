@@ -87,3 +87,9 @@ variable "state_prefix" {
   description = "Use to store multiple states when provisioning with the same state_bucket_name"
   default     = ""
 }
+
+variable "vpc-name" {
+  type        = string
+  description = "Custom VPC Name"
+  default     = "cicd-vpc"
+}
