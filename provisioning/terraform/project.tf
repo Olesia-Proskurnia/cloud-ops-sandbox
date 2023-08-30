@@ -40,3 +40,13 @@ module "enable_google_apis" {
 data "google_project" "info" {
   project_id = var.gcp_project_id
 }
+
+module "vpc" {
+  source     = "./modules/vpc"
+  gcp_project_id = var.gcp_project_id
+  # regions    = var.regions
+  vpc-name   = var.vpc-name
+  # depends_on = [
+  #   module.cloud_source_repo
+  # ]
+}
